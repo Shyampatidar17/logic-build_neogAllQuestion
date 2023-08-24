@@ -5,6 +5,7 @@ console.log("shyam")
 // Q1. Write a program to add 5 numbers. The value of numbers are num1=5, num2=13, num3=7, num4=21 and num5=48.
 
 // oneWay
+
 // function sum(num1,num2,num3,num4,num5){
 //     const plus = num1+num2+num3+num4+num5
 //     return plus
@@ -212,16 +213,7 @@ console.log("shyam")
 //     second = third
 // }
 
-// let first =0,second=1, third;
-// for(let i=1;i<=input;i++){
-//     console.log(first)
-//     third = first+second
-//     // console.log(third)
-//     first = second;
-//     // console.log(first)
-//     second = third
-//     // console.log(second)
-// }
+
 
 
 // Q10.Write a program to take an input from a user and find its Factorial. Example: Factorial of 5 is 120
@@ -285,18 +277,15 @@ console.log("shyam")
 
 // Q12.Write a program to take a day as an input and determine whether it is a weekday or weekend. Example: Tuesday is weekday.
 
-// let str = prompt("enter a day")
-
-// if(str=="monday" ||str=="Monday" ||str=="MONDAY" || str=="tuesday" || str=="Tuesday" || str=="TUESDAY" || str=="wednesday" || str=="Wednesday" || str=="WEDNESDAY" || str=="thursday" || str=="Thursday" || str=="THURSDAY" || str==" friday"|| str=="Friday"|| str=="FRIDAY" ){
+// let input = prompt("enter a day")
+// let str = input.toLowerCase()
+// if(str=="monday" || str=="tuesday" || str=="wednesday" ||  str=="thursday" || str==" friday" ){
 //    console.log(`${str} is weekday`) 
-// }else if(str=="suturday"||str=="Suturday"||str=="SUTURDAY" || str=="sunday"|| str=="Sunday"|| str=="SUNDAY"){
+// }else if(str=="saturday" || str=="sunday"){
 //     console.log(`${str} is weekend`)
 // }else{
 //     console.log(`${str} pls input valid day`)
-
 // }
-
-
 
 
 // ----------------->Functions<----------------
@@ -322,14 +311,13 @@ console.log("shyam")
 //Q3. Given a sentence, your functions should return the number of words in the sentence.
 // Example:Input: noOfWords(We are neoGrammers) ––> Output: 3
 
-
-
 // let input = prompt("Please enter a sentence:-");
 // const noOfWords =(a)=>{
 //     let word = a.split(" ").length;
 //     return word;
 // }
 // console.log(noOfWords(input))
+
 
 // Q4. Given n numbers, your function should return the minimum of them all. The number of parameters won't be accepted from user.
 // Example:Input: findMin(3,5) ––> Output: 3;
@@ -339,6 +327,21 @@ console.log("shyam")
 // function findMin(...num){
 //     let min = Math.min(...num)
 //     return min
+// }
+// console.log("Minimum number is" ,findMin(3,5,9,1))
+
+
+// -------Anather way
+
+// function findMin(...num){
+//   let min =Infinity;
+//   for(let i=0;i<num.length;i++){
+// 	console.log(num[i])
+// 	if(num[i]<min){
+// 		min = num[i]
+// 	}
+//   }
+//   return min
 // }
 // console.log("Minimum number is" ,findMin(3,5,9,1))
 
@@ -352,6 +355,20 @@ console.log("shyam")
 // }
 // console.log("maximum number ",findmaximum(3,5))
 // console.log("maximum number ",findmaximum(3,5,9,1))
+
+// Anather Way 
+
+// function findmaximum(...num){
+// 	let max = -Infinity;
+// 	for(let i=0;i<num.length;i++){
+// 	  console.log(num[i])
+// 	  if(num[i]>max){
+// 		  max = num[i]
+// 	  }
+// 	}
+// 	return max
+//   }
+//   console.log("maximum number is" ,findmaximum(3,5,9,1))
 
 
 // Q6. Given three angles of a triange, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all. Example:
@@ -812,8 +829,8 @@ console.log("shyam")
 // }
 
 
-let str1 = "shyam";
-let str2 = "pooja"
+// let str1 = "shyam";
+// let str2 = "pooja";
 
 // let result = ""
 // for(let i = 0;i<str1.length||i<str2.length;i++){
@@ -965,10 +982,6 @@ let str2 = "pooja"
 //     splt[i] = splt[i].toUpperCase()
 // }
 // console.log(splt.join(""))
-
-
-
-
 
 
 // Q21.Given a string "how was your day?" and a word "how", write a program that removes the occurrence of the specified word from given sentence. ( input: string⇒"programming camp are amazing",word⇒ "programming"; output:" camp are amazing")
@@ -1372,22 +1385,22 @@ let str2 = "pooja"
 // }
 // console.log(splt.join(""))
 
-let input = document.getElementById("input");
-let submit = document.getElementById("submit");
-let ouput = document.getElementById("output");
+// let input = document.getElementById("input");
+// let submit = document.getElementById("submit");
+// let ouput = document.getElementById("output");
 
-console.log(input,ouput,submit)
+// console.log(input,ouput,submit)
 
-const submitHandle =()=>{
-	let data = input.value
-	let splt = data.split('')
-   for(let i=2;i<splt.length;i +=3){
-	splt[i]=""
-}
-let result = splt.join("")
-ouput.textContent = result
+// const submitHandle =()=>{
+// 	let data = input.value
+// 	let splt = data.split('')
+//    for(let i=2;i<splt.length;i +=3){
+// 	splt[i]=""
+// }
+// let result = splt.join("")
+// ouput.textContent = result
 	
-}
+// }
 
-submit.addEventListener("click",submitHandle)
+// submit.addEventListener("click",submitHandle)
 

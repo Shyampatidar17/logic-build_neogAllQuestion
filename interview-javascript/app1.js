@@ -165,6 +165,8 @@ const numbers = [1,2,3,8,9,12,16];
 //     console.log("the number is not a prime number")
 // }
 
+// ---practice of prime
+
 // let num = 2;
 // if(num==1){
 //     console.log("1 is neither prime nor composite number")
@@ -204,7 +206,8 @@ const numbers = [1,2,3,8,9,12,16];
 // vowelCount(string)
 
 
-// 12 how to sting in javaString
+// 12 how to find reverse string in javaScript
+
 // let string = "shyam is a good boy";
 // let reverse = string.split("").reverse().join("").split(" ").reverse().join(" ")
 // console.log(reverse)
@@ -309,7 +312,7 @@ const numbers = [1,2,3,8,9,12,16];
 // var uniounArray = [...arr1,...arr2]
 // console.log([...new Set(uniounArray)])
 
-//  Program to convert first letter of a string in to uppercase in javaScript
+//17.  Program to convert first letter of a string in to uppercase in javaScript
 
 // let str = "shyam patidar is a good boy"
 
@@ -319,16 +322,16 @@ const numbers = [1,2,3,8,9,12,16];
 
 // console.log(data.join(" "))
 
-//  fibonacci series
+// 18 fibonacci series
 
 // let a = 0 ;
 // let b = 1;
 // for(let i=0;i<=15;i++){
 //     // console.log(i)
+//     console.log(temp)
 //     let temp = a+b; // 0+1=1
 //     a = b;
 //     b=temp
-//     console.log(temp)
 // }
 
 // let string =""
